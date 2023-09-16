@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a-scene>
+        <!-- Personagem -->
+        <a-entity id="personagem" position="0 0.5 -1" rotation="0 0 0">
+            <!-- <a-sphere position="0 2.7 0" radius="0.4" color="blue"></a-sphere>
+            <a-box id="tronco" position="0 1.4 0" width="1" height="1.5" color="blue" depth="0.5"></a-box>
+            <a-box id="bracos" position="0.8 1.6 0" width="0.5" height="1" color="blue" depth="0.5"></a-box>
+            <a-box id="bracos" position="-0.8 1.6 0" width="0.5" height="1" color="blue" depth="0.5"></a-box>
+            <a-box id="pernas" position="0.3 0 0" width="0.5" height="1" color="blue" depth="0.5"></a-box>
+            <a-box id="pernas" position="-0.3 0 0" width="0.5" height="1" color="blue" depth="0.5"></a-box> -->
+            <a-entity scale="10 10 10" gltf-model="url(chara.glb)"></a-entity>
+        </a-entity>
+
+        <!-- Câmera -->
+        <a-entity id="camera" camera position="0 1 0"></a-entity>
+
+        <!-- Ambiente -->
+        <a-sky src="https://cdn.aframe.io/a-painter/images/sky.jpg"></a-sky>
+    </a-scene>
+
+    <input type="range" id="rangeInput" min="0" max="360" value="0">
+
+    <div class="divLeft">
+        <h1></h1>
+    </div>
+    <div class="divRight"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

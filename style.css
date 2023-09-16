@@ -1,0 +1,30 @@
+input {
+    width: 33vw;
+    position: absolute;
+    z-index: 999;
+    bottom: 15px;
+    left: 33vw;
+}
+
+.a-enter-vr-button {
+    display: none;
+}
+
+.divLeft {
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    background-color: blue;
+}
+
+.divRight {
+    width: 33vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    right: 0px;
+    background-color: blue;
+}
